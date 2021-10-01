@@ -3,36 +3,38 @@
 		<meta charset="UTF-8" />
 		<title>Rdio - Luke Chesser</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
-		
-		<script type="text/javascript" src="popper.min.js"></script>
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="css/reset.css"/>
 		<link rel="stylesheet" href="css/global.css"/>
 	</head>
-	<body>
+	<body class="container">
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 		<header>
-			<div class="wrapper container-fluid">
+			<div class="wrapper container">
 				<div class="row">
-					<div class="logo-search offset-md-2 col-2" style="border: 1px solid red;">
+					<div class="logo-search col-2">
 						<img class="pull-left" src="img/logo.png" />
 					</div>
 
-					<form method="POST" action="index.html" class="col-lg-2 col-md-3 col-5"style="border: 1px solid red;">
+					<form method="POST" action="index.html" class="searchBar col-lg-3 col-md-4 col-sm-6">
 						<input type="search" required class="search">
 						<input type="submit" name="submit" value="Rechercher" class="submit">
 					</form>
 
-					<div class="user col-auto offset-lg-3 offset-sm-2 offset-2"style="border: 1px solid red;">
+					<div class="user ml-auto">
 						
 						<div class="dropdown">
 							<button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							  <a href="#">Luke Chesser</a>
 							</button>
 							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-							  <a class="dropdown-item" href="#">Action</a>
-							  <a class="dropdown-item" href="#">Another action</a>
-							  <a class="dropdown-item" href="#">Something else here</a>
+								<a class="dropdown-item" href="#"><span class="glyphicon glyphicon-pencil"></span> Edit my profile</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#"><span class="glyphicon glyphicon-off"></span> Logout</a>
 							</div>
 						</div>
 					</div>
@@ -40,11 +42,11 @@
 			</div>
 		</header>
 
-		<section class="container-fluid" style="border: 1px solid green;">
-			<div class="row justify-content-center"style="border: 1px solid purple;">
-			<aside class="col-md-2 d-none d-lg-block"style="border: 1px solid yellow;">
+		<section class="container-fluid">
+			<div class="row justify-content-center"no-gutters>
+			<aside class="col-md-2 d-none d-lg-block">
 				<h3>Browse</h3>
-				<nav class="browse"style="border: 1px solid yellow;">
+				<nav class="browse">
 					<ul class="main">
 						<li><a class="heavy" href="#">Heavy Rotation</a></li>
 						<li><a class="recent" href="#">Recent Activity</a></li>
@@ -53,7 +55,7 @@
 					</ul>
 				</nav>
 				<h3>Your music</h3>
-				<nav class="music"style="border: 1px solid red;">
+				<nav class="music">
 					<ul class="main">
 						<li><a class="collection" href="#">Collection</a></li>
 						<li><a class="history" href="#">History</a></li>
@@ -61,25 +63,25 @@
 				</nav>
 			</aside>
 
-			<main class="col-sm-12 col-md-8 col-lg-6"style="border: 1px solid blue;">
-				<header class="row"style="border: 1px solid red;">
+			<main class="col-sm-12 col-lg-10 no-gutters">
+				<header class="row">
 					<div class="name-photo row">
 						<aside class="col-md-auto">
 							<img src="img/artist.png" />
 						</aside>
 						<div class="name col-md-auto">
 							<h1>Luke Chesser</h1>
-							<p>Montreal, Quebec, Canada <a href="https://www.facebook.com/" target="_blank"><img class="share" src="img/icon/fb.png" /></a><a href="https://twitter.com/" target="_blank"><img class="share" src="img/icon/twitter.png" /></a></p>
+							<p>Montreal, Quebec, Canada <a href="https://www.facebook.com/" target="_blank"><img class="share" src="img/icon/fb.png" /></a><a href="https://twitter.com/" target="_blank"><img class="share" src="img/icon/twitter.png"/></a></p>
 						</div>
 					</div>
-					<div class="stats-links row justify-content-between"style="border: 1px solid red;">
-						<section class="stats col-md-auto"style="border: 1px solid red;">
+					<div class="stats-links row col-12 justify-content-between no-gutters">
+						<section class="stats col-md-auto">
 							<span>2 Playlists</span>
 							<span>4 Reviews</span>
 							<span>6 Followers</span>
 							<span>13 Following</span>
 						</section>
-						<div class="links col-md-auto"style="border: 1px solid red;">
+						<div class="links col-md-auto">
 							<div>
 								<a href="#">Collection</a>
 								<a href="#">History</a>
@@ -93,7 +95,7 @@
 				</div>
 				<section id="albums" class="container">
 					<div class="row">
-						<article class="col-lg-2 col-md-3 col-sm-4 col-6">
+						<article class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6">
 							<figure>
 								<img src="img/album/album_01.png" />
 								<figcaption>Native (Deluxe)</figcaption>
@@ -101,7 +103,7 @@
 							<div class="artist">OneRepublic</div>
 							<div class="count">17 songs</div>
 						</article>
-						<article class="col-lg-2 col-md-3 col-sm-4 col-6">
+						<article class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6">
 							<figure>
 								<img src="img/album/album_02.png" />
 								<figcaption>Wax Wings</figcaption>
@@ -109,7 +111,7 @@
 							<div class="artist">Joshua Radin</div>
 							<div class="count">11 songs</div>
 						</article>
-						<article class="col-lg-2 col-md-3 col-sm-4 col-6">
+						<article class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6">
 							<figure>
 								<img src="img/album/album_03.png" />
 								<figcaption>Modern Vampires of th...</figcaption>
@@ -117,7 +119,7 @@
 							<div class="artist">Vampire Weekend</div>
 							<div class="count">12 songs</div>
 						</article>
-						<article class="col-lg-2 col-md-3 col-sm-4 col-6">
+						<article class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6">
 							<figure>
 								<img src="img/album/album_04.png" />
 								<figcaption>Night Visions</figcaption>
@@ -125,7 +127,7 @@
 							<div class="artist">Imagine Dragons</div>
 							<div class="count">11 songs</div>
 						</article>
-						<article class="col-lg-2 col-md-3 col-sm-4 col-6">
+						<article class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6">
 							<figure>
 								<img src="img/album/album_05.png" />
 								<figcaption>Trouble Will Find Me</figcaption>
@@ -133,7 +135,7 @@
 							<div class="artist">The National</div>
 							<div class="count">13 songs <span class="explicit">EXPLICIT</span></div>
 						</article>
-						<article class="col-lg-2 col-md-3 col-sm-4 col-6">
+						<article class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6">
 							<figure>
 								<img src="img/album/album_06.png" />
 								<figcaption>Native (Deluxe)</figcaption>
@@ -141,7 +143,7 @@
 							<div class="artist">OneRepublic</div>
 							<div class="count">17 songs</div>
 						</article>
-						<article class="col-lg-2 col-md-3 col-sm-4 col-6">
+						<article class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6">
 							<figure>
 								<img src="img/album/album_07.png" />
 								<figcaption>Wax Wings</figcaption>
@@ -149,7 +151,7 @@
 							<div class="artist">Joshua Radin</div>
 							<div class="count">11 songs</div>
 						</article>
-						<article class="col-lg-2 col-md-3 col-sm-4 col-6">
+						<article class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6">
 							<figure>
 								<img src="img/album/album_08.png" />
 								<figcaption>Modern Vampires of th...</figcaption>
@@ -157,7 +159,7 @@
 							<div class="artist">Vampire Weekend</div>
 							<div class="count">12 songs</div>
 						</article>
-						<article class="col-lg-2 col-md-3 col-sm-4 col-6">
+						<article class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6">
 							<figure>
 								<img src="img/album/album_09.png" />
 								<figcaption>Night Visions</figcaption>
@@ -165,7 +167,7 @@
 							<div class="artist">Imagine Dragons</div>
 							<div class="count">11 songs <span class="explicit">EXPLICIT</span></div>
 						</article>
-						<article class="col-lg-2 col-md-3 col-sm-4 col-6">
+						<article class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6">
 							<figure>
 								<img src="img/album/album_10.png" />
 								<figcaption>Trouble Will Find Me</figcaption>
